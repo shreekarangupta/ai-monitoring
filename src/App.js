@@ -3,6 +3,10 @@ import axios from "axios";
 import "./App.css";
 
 const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+fetch(`${backendUrl}/api/some-endpoint`, {
+    method: 'POST',
+    body: JSON.stringify(data)
+})
 
 function App() {
   const [cameraUrls, setCameraUrls] = useState([""]);
