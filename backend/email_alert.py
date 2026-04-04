@@ -4,8 +4,9 @@ import os
 import time
 
 # 🔒 YOUR FIXED EMAIL (OWNER)
-EMAIL = "laddusharma123321@gmail.com"
-PASSWORD = "movolzxnljsxmchk"
+EMAIL = os.getenv("EMAIL_USER")
+PASSWORD = os.getenv("EMAIL_PASS")
+
 
 
 def send_email(image_path, to_email):
