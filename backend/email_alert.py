@@ -1,37 +1,3 @@
-# import smtplib
-# from email.message import EmailMessage
-# import os
-
-# EMAIL = "laddusharma123321@gmail.com"
-# PASSWORD = "movolzxnljsxmchk"
-
-# def send_email(image_path):
-#     try:
-#         msg = EmailMessage()
-#         msg['Subject'] = '🚨 Motion Detected!'
-#         msg['From'] = EMAIL
-#         msg['To'] = "karanguptaagra60@gmail.com"
-
-#         msg.set_content("Motion detected! Check attachment.")
-
-#         with open(image_path, 'rb') as f:
-#             msg.add_attachment(
-#                 f.read(),
-#                 maintype='image',
-#                 subtype='jpeg',
-#                 filename=os.path.basename(image_path)
-#             )
-
-#         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-#             smtp.login(EMAIL, PASSWORD)
-#             smtp.send_message(msg)
-
-#     except Exception as e:
-#         print("Email Error:", e)
-
-
-
-
 import smtplib
 from email.message import EmailMessage
 import os
