@@ -1,19 +1,3 @@
-# import cv2
-
-# def is_frame_changed(prev_frame, curr_frame, threshold=5000):
-#     prev_gray = cv2.cvtColor(prev_frame, cv2.COLOR_BGR2GRAY)
-#     curr_gray = cv2.cvtColor(curr_frame, cv2.COLOR_BGR2GRAY)
-
-#     diff = cv2.absdiff(prev_gray, curr_gray)
-#     _, thresh = cv2.threshold(diff, 25, 255, cv2.THRESH_BINARY)
-
-#     change = cv2.countNonZero(thresh)
-
-#     return change > threshold
-
-
-
-
 import cv2
 
 def is_frame_changed(prev_frame, curr_frame, threshold=5000):
