@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const BASE_URL = "http://192.168.1.4:5000";
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
 function App() {
   const [cameraUrls, setCameraUrls] = useState([""]);
