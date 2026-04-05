@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const BASE_URL = "https://ai-monitoring-backend-7yar.onrender.com";
-fetch(`${backendUrl}/api/endpoint`, {...})
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+
 
 function App() {
   const [cameraUrls, setCameraUrls] = useState([""]);
