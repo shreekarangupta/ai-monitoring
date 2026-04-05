@@ -4,7 +4,6 @@ import "./App.css";
 
 const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 
-
 function App() {
   const [cameraUrls, setCameraUrls] = useState([""]);
   const [cameraIds, setCameraIds] = useState([]);
